@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+    <title>Mesa 08</title>
+  </head>
+  <header>
+    <div class="topMenu">
+        <h2>Trabalho mesa 08</h2>
+    </div>
+  </header>
+  <body>
+
+    <div class="formulario">
+      <form onsubmit="enviarForm()">
+        <label>Nome:</label>
+        <input type="text" placeholder="Digite seu nome" />
+
+        <label>Sobrenome:</label>
+        <input type="text" placeholder="Digite seu sobrenome" />
+
+        <label>Email:</label>
+        <input type="email" placeholder="Digite seu email" require/>
+
+        <label>Texto:</label>
+        <input id="cont" type="textarea" />
+
+        <div class="btn">
+            <button  type="submit" style="background-color: rgb(29, 142, 29);">Enviar</button>
+        </div>
+        <span>A Ultima tecla digitada foi</span>
+        <span id="contSpan" style="font-size: 2rem"></span>
+    </form>
+    </div>
+
+    
+
+    <script src="./script.js"></script>
+  </body>
+</html>
