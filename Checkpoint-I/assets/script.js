@@ -97,7 +97,7 @@ var jogadores = [
     time: "Grêmio",
     posicao: "Lateral",
     desc: "Jogador caro, camisa 10, estudante da DH exemplar.",
-    url: "https://media-exp1.licdn.com/dms/image/D4D03AQFVHT3WmJgn-w/profile-displayphoto-shrink_200_200/0/1666900655279?e=1674086400&v=beta&t=cN0pjmN7fmcEQ8-WcxcRb4GvSH-RFtmnSF39gLJZjms",
+    url: "https://media-exp1.licdn.com/dms/image/D4D03AQFXkklE_KCJvw/profile-displayphoto-shrink_200_200/0/1665498740981?e=1674086400&v=beta&t=jTna6QEIBzqZiBY2F1qL_gtRoghaZebi0ypokpl2x5k",
   },
 ];
 
