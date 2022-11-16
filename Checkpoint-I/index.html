@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="generator" content="Hugo 0.104.2" />
+    <title>CHECKPOINT - 01</title>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              
+              <h4 class="text-white">Sobre este exercício</h4>
+              <p class="text-muted">
+                Saiba mais sobre as informações da copa, divirta-se incluindo
+                seus amigos aos relacionados pelos responsáveis do
+                Hexacampeonato do Brasil.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              aria-hidden="true"
+              class="me-2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+              />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            <strong>CHECKPOINT - I</strong>
+          </a>
+
+          
+         
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            
+            <h1 class="fw-light">Album da copa</h1>
+            <p class="lead text-muted">
+              Brinque e divirta-se escalando seus amigos entre os relacionadios
+              para copa do mundo 2022, no Qatar. 
+            </p>
+            <p>
+              <a href="#album" class="btn btn-primary my-2"
+                >Quero escalar meus amigos.</a
+              >
+            </p>
+            
+            <hr>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container" style="width: 70%" id="album">
+          
+          <blockquote class="blockquote">
+            <h2>Confira a seleção de jogadores</h2>
+            <p class="mb-0">Insira todos os dados solicitados a seguir para entrar na brincadeira, não esqueça, tire um print e envie para o amigo zoado. </p>
+            <span> OBS: Todo novo jogador é adicionado ao final da galeria.</span>
+          </blockquote>
+
+          
+
+          
+          
+          <form class="row g-3" id="Formul">
+            <div class="col-md-7">
+              <label for="validationCustom01" class="form-label"
+                >Nome completo</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="nomeJogador"
+                onchange="validaBtn(value.length)"
+                required
+              />
+    
+            </div>
+
+            <div class="col-md-2">
+              <label for="validationCustom03" class="form-label">Idade:</label>
+              <input
+                type="number"
+                class="form-control"
+                id="idadeJogador"
+                onchange="validaBtn(value)"
+                required
+              />
+            </div>
+
+            <div class="col-md-3">
+              <label for="timeJogador" class="form-label"
+                >Qual o time dele(a)?</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="timeJogador"
+                onchange="validaBtn(value)"
+                required
+              />
+            </div>
+
+            <div class="col-md-2">
+              <label for="validationCustom04" class="form-label">Posição</label>
+              <select class="form-select" id="posicaoJogador" required>
+                <option selected disabled value="">Escolha</option>
+                <option value="Atacante" onchange="validaBtn(value)">Atacante</option>
+                <option value="Goleiro" onchange="validaBtn(value)">Goleiro</option>
+                <option value="Defesa" onchange="validaBtn(value)">Defesa</option>
+                <option value="Meia" onchange="validaBtn(value)">Meia</option>
+                <option value="Lateral" onchange="validaBtn(value)">Lateral</option>
+              </select>
+              <div class="invalid-feedback">Selecione uma posição</div>
+            </div>
+
+            <div class="col-md-10">
+              <label for="validationCustom02" class="form-label"
+                >URL da foto</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="urlFoto"
+                onchange="validaBtn(value)"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-text">Descrição sobre o "atleta"</span>
+              <textarea class="form-control" aria-label="With textarea" id="descricaoJogador" onchange="validaBtn(value)"></textarea>
+            </div>
+
+            
+
+            <div class="col-12">
+              <button class="btn btn-primary" type="button" id="cadastrarJogador">Cadastrar</button>
+            </div>
+
+          </form>
+
+          </div>
+
+          <div class="album py-5 bg-dark">
+            <div class="container" style="width: 100%" id="album">
+
+          <blockquote class="blockquote" id="convocadosTite">
+            <h2>Confira a seleção de jogadores</h2>
+            <p class="mb-0">Confira alguns dos jogadores convocados pelo técnico da seleção juntamente com os que você adicionou.</p>
+          </blockquote>
+
+          
+
+
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+            id="jogadores"
+          >
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="album py-5 bg-light" id="estadiosCopa">
+        <div class="container" style="width: 100%" id="album">
+          <h2 class="pb-2 border-bottom">Estádios da copa - 2022</h2>
+
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://conteudo.imguol.com.br/c/esporte/56/2021/07/08/ahmad-bin-ali-stadium-visto-de-cima-1625782509957_v2_1024x1.jpg.webp');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1" style="width:300px">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Al Bayt</h3>
+                  <p class=" text-white text-shadow-1">Cidade: Al Khor</p>
+                  <p class=" text-white text-shadow-1">  Capacidade: 80.000</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://conteudo.imguol.com.br/c/esporte/1b/2021/07/08/imagem-aerea-do-khalifa-international-stadium-1625782558682_v2_1024x1.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1" style="width:300px">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Khalifa</h3>
+                  <p class=" text-white text-shadow-1">Cidade: Doha</p>
+                  <p class=" text-white text-shadow-1">  Capacidade: 40.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://s3.static.brasilescola.uol.com.br/be/2021/11/al-janoub-stadium.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1" style="width:300px">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Al Janoub</h3>
+                  <p class=" text-white text-shadow-1">Cidade: Al Wakrah</p>
+                  <p class=" text-white text-shadow-1">  Capacidade: 40.000</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://s5.static.brasilescola.uol.com.br/be/2021/11/ahmad-bin-ali-stadium.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1" style="width:300px">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Ahmad Bin Ali</h3>
+                  <p class=" text-white text-shadow-1">Cidade: Al Rayyan"</p>
+                  <p class=" text-white text-shadow-1">  Capacidade: 22.000</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://conteudo.imguol.com.br/c/esporte/f0/2021/07/08/al-janoub-stadium-e-um-dos-oito-estadios-da-copa-do-mundo-de-2022-1625782535831_v2_1024x1.jpg.webp');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1" style="width:300px">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Al Thumama</h3>
+                  <p class=" text-white text-shadow-1">Cidade: Doha</p>
+                  <p class=" text-white text-shadow-1">  Capacidade: 40.000</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://conteudo.imguol.com.br/c/esporte/2d/2021/07/08/education-city-stadium-e-um-dos-estadios-da-copa-do-mundo-de-2022-1625782756565_v2_1024x1.png.webp');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1" style="width:700px">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Education City</h3>
+                  <p class=" text-white text-shadow-1">Cidade: Doha</p>
+                  <p class=" text-white text-shadow-1">  Capacidade: 40.000</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://s4.static.brasilescola.uol.com.br/be/2021/11/estadio-974.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1" style="width:300px">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Ras Abu Aboud</h3>
+                  <p class=" text-white text-shadow-1">Cidade: Doha</p>
+                  <p class=" text-white text-shadow-1">  Capacidade: 40.000</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://static-wp-tor15-prd.torcedores.com/wp-content/uploads/2022/11/estadios-copa-do-mundo-catar-2022.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1" style="width:300px">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Lusail</h3>
+                  <p class=" text-white text-shadow-1">Cidade: Lusail</p>
+                  <p class=" text-white text-shadow-1">  Capacidade: 80.000</p>
+                </div>
+              </div>
+            </div>
+            
+
+            
+
+
+    </div>
+
+
+
+    </main>
+
+
+    
+
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Voltar para o inicio</a>
+        </p>
+        <p class="mb-1">
+          Aqui foi realizado o exercício do checkpoint-I
+        </p>
+        
+      </div>
+    </footer>
+
+    <script src="./assets/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
