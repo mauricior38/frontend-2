@@ -83,7 +83,7 @@ var jogadores = [
   },
 
   {
-    nome: "Guilherme Anzolin Laquinto",
+    nome: "Guilherme Anzolin Iaquinto",
     idade: 27,
     time: "Santos",
     posicao: "Atacante",
